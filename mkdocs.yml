@@ -1,5 +1,42 @@
-site_name: "Meu Projeto"
-theme:
-  name: material
+site_name: "Meu projeto"
+site_url: "https://VHbernardes.github.io/testPages"  # Atualize com sua URL
 
-site_url: "https://VHbernardes.github.io/testPages"
+theme:
+  name: "material"
+  palette:
+    scheme: "aqua"              # Usa um tema azul elegante; pode testar "default" ou "dark"
+    primary: "blue gray"        # Cor principal suave e sofisticada (opções: "indigo", "cyan", etc.)
+    accent: "deep orange"       # Cor de destaque atraente (ex.: "red", "light green", etc.)
+  font:
+    text: "Open Sans"           # Fonte limpa e moderna para o texto
+    code: "Source Code Pro"     # Fonte para código, elegante e legível
+
+  # Recursos adicionais do Material para melhor usabilidade
+  features:
+    - navigation.tabs           # Ativa abas de navegação no topo
+    - navigation.sections       # Exibe uma barra lateral organizada em seções
+    - navigation.expand         # Expande a navegação lateral para facilitar a visualização de páginas
+    - header.autohide           # Oculta o cabeçalho automaticamente ao rolar a página
+    - toc.integrate             # Mantém a tabela de conteúdos sempre visível na leitura
+    - search.suggest            # Sugere palavras durante a busca
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: "https://github.com/VHbernardes/testPages"  # Link para o repositório do projeto no GitHub
+    - icon: fontawesome/brands/linkedin
+      link: "https://linkedin.com/in/seu-perfil"        # Link para seu perfil LinkedIn
+
+markdown_extensions:
+  - toc:
+      permalink: true           # Permite linkar diretamente cada seção
+  - footnotes
+  - tables
+  - admonition                  # Para criar blocos de nota, aviso, etc.
+  - codehilite:
+      guess_lang: false         # Evita adivinhação automática de linguagem nos blocos de código
+
+nav:
+  - Página Inicial: index.md
+  - Introdução: getting-started.md
+  - Atas: atas.md
